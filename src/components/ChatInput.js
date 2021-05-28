@@ -7,13 +7,11 @@ import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import WebcamCapture from "./WebcamCapture";
 import { v4 as uuid } from "uuid";
-// import Preview from "./Preview";
-import { selectUser } from "../features/appSlice";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { resetCameraImage, selectCameraImage } from "../features/cameraSlice";
 import { useDispatch, useSelector } from "react-redux";
 import CloseIcon from "@material-ui/icons/Close";
-import SendIcon from "@material-ui/icons/Send";
+
 
 function ChatInput({ channelName, channelId, chatRef }) {
   const [input, setInput] = useState("");

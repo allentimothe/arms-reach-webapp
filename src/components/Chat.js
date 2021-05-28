@@ -77,9 +77,17 @@ function Chat() {
 export default Chat;
 
 const ChatContainer = styled.div`
-  flex: 0.7;
-  flex-grow: 1;
-  overflow-y: scroll;
+width:60vh;
+height: 100vh;
+padding: 60px 35px 35px 35px;
+margin-left: 2vh;
+border-radius: 40px;
+background: #ecf0f3;
+box-shadow: 13px 13px 20px #cbced1,   -13px -13px 20px #ffffff;
+-webkit-border-radius: 40px;
+-moz-border-radius: 40px;
+-ms-border-radius: 40px;
+-o-border-radius: 40px;
 `;
 
 const Header = styled.div`

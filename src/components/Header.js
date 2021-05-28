@@ -28,12 +28,17 @@ export default Header;
 const HeaderContainer = styled.div`
   display: flex;
   position: fixed;
+  height: 5vh;
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
-  background-color: #3b3e49;
-  color: white;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1,              -13px -13px 20px #ffffff;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 `;
 
 const HeaderAvatar = styled(Avatar)`

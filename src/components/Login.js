@@ -28,29 +28,82 @@ function Login() {
 export default Login;
 
 const LoginContainer = styled.div`
-  background-color: #f8f8f8;
+  box-sizing: border-box; 
+  margin:0;
   height: 100vh;
-  display: grid;
-  place-items: center;
+  width: 100vw;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:#555;
+  background: #ecf0f3;
+
 `;
 
 const LoginInnerContainer = styled.div`
-  padding: 100px;
-  text-align: center;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-
-  > img {
-    object-fit: contain;
-    height: 100px;
-    margin-bottom: 40px;
-  }
+  width:50vh;
+  height: 30vh;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1, 
+  -13px -13px 20px #ffffff;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
 
   > button {
-    margin-top: 50px;
-    text-transform: inherit !important;
-    background-color: #0a8d48 !important;
-    color: white;
+    outline: none;
+  border:none;
+  cursor: pointer;
+  width:100%;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  text-align: center;
+  background: #24cfaa;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px #ffffff;
+  transition: 0.5s;
+  }
+
+  > button:hover { 
+    background:#2fdbb6;
+  }
+
+  > button:active { 
+    background:#1da88a;
+  }
+
+  > h1 { 
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding-top: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  > p { 
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    letter-spacing: 3px;
+  }
+
+  .login__text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vh;
+    margin-left: 12vh;
+    font-size: 2vh;
   }
 `;

@@ -1,7 +1,6 @@
 import React from "react";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
 import SidebarOption from "./SidebarOption";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AddIcon from "@material-ui/icons/Add";
 import { auth, db } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -24,8 +23,6 @@ function Sidebar() {
         </SidebarInfo>
       </SidebarHeader>
       <hr />
-      <SidebarOption Icon={ExpandMoreIcon} title="Channels" />
-      <hr />
       <SidebarOption Icon={AddIcon} addChannelOption title="Add Channel" />
       {channels?.docs.map((doc) => (
         <SidebarOption key={doc.id} title={doc.data().name} id={doc.id} />
@@ -37,12 +34,17 @@ function Sidebar() {
 export default Sidebar;
 
 const SidebarContainer = styled.div`
-  color: white;
-  background-color: #3b3e49;
-  flex: 0.3;
-  border-top: 1px solid grey;
-  max-width: 260px;
-  margin-top: 60px;
+width:15vh;
+height: 70vh;
+padding: 60px 35px 35px 35px;
+margin-top: 20vh;
+border-radius: 40px;
+background: #ecf0f3;
+box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #ffffff;
+-webkit-border-radius: 40px;
+-moz-border-radius: 40px;
+-ms-border-radius: 40px;
+-o-border-radius: 40px;
 
   > hr {
     margin-top: 10px;
