@@ -11,6 +11,8 @@ import styled from "styled-components";
 
 function App() {
   const [user, loading] = useAuthState(auth);
+  
+  
 
   if (loading) {
     return (
